@@ -30,4 +30,4 @@ function ColorSchemesExample() {
  }
 
  export default ColorSchemesExample;
-//export default App
+
