@@ -1,11 +1,14 @@
-import './App.css';
-import { ItemListContainer } from './components/ItemListContainer';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import carrito from './multimedia/carrito compras.png';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+
+
+import './App.css';
+import { ItemListContainer } from './components/ItemListContainer';
+import { CartWidget } from './components/CartWidget';
+
 
 function ColorSchemesExample() {
   return (
@@ -17,10 +20,11 @@ function ColorSchemesExample() {
             <Nav.Link href="#home">Inicio</Nav.Link>
             <Nav.Link href="#features">Productos</Nav.Link>
             <Nav.Link href="#pricing">Experiencias</Nav.Link>
+            <CartWidget/>
           </Nav>
         </Container>
       </Navbar>
-      <img src= {carrito} alt="carritoCompras"/> 0  
+     
     <ItemListContainer greeting = "Bienvenidx!"/> </>
   )
  }
