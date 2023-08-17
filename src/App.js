@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import carrito from './multimedia/carrito compras.png';
+import carrito from './multimedia/carrito-compras.png';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -8,9 +8,10 @@ import Navbar from 'react-bootstrap/Navbar';
 import './App.css';
 import { ItemListContainer } from './components/ItemListContainer';
 import { CartWidget } from './components/CartWidget';
+import { NavBar } from './components/NavBar';
 
 
-function ColorSchemesExample() {
+function App() {
   return (
     <>
       <Navbar bg="dark" data-bs-theme="dark">
@@ -25,9 +26,9 @@ function ColorSchemesExample() {
         </Container>
       </Navbar>
      
-    <ItemListContainer greeting = "Bienvenidx!"/> </>
+    <ItemListContainer greeting="Bienvenidx!"/> </>
   )
  }
 
- export default ColorSchemesExample;
+ export default App;
 
